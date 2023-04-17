@@ -58,7 +58,7 @@ if st.button('Predict probability'):
         {'Estimated_Day_of_Ovulation':[Estimated_Day_of_Ovulation],'Length_of_Luteal_Phase':[Length_of_Luteal_Phase ],'Total_Days_of_Fertility': [Total_Days_of_Fertility], 'Total_Number_of_HighDays': [Total_Number_of_HighDays],'Result': [Result]})
     #st.dataframe(input_df)
 
-    st.markdown(input_df.style.hide(axis="index").to_html(), unsafe_allow_html=True)
+    st.markdown(input_df.style.hide().to_html(), unsafe_allow_html=True)
 
 
 
