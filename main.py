@@ -56,13 +56,9 @@ if st.button('Predict probability'):
 
     input_df = pd.DataFrame(
         {'Estimated_Day_of_Ovulation':[Estimated_Day_of_Ovulation],'Length_of_Luteal_Phase':[Length_of_Luteal_Phase ],'Total_Days_of_Fertility': [Total_Days_of_Fertility], 'Total_Number_of_HighDays': [Total_Number_of_HighDays],'Result': [Result]})
-    #st.dataframe(input_df)
+    st.dataframe(input_df)
 
-    #st.markdown(input_df.style.hide().to_html(), unsafe_allow_html=True)
-    styled_df = input_df.style.hide()
-
-# Convert the styled DataFrame to HTML and display it using Streamlit's Markdown function
-    st.markdown(styled_df.to_html(), unsafe_allow_html=True)
+   
 
 
 
