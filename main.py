@@ -43,7 +43,7 @@ Last_Period = st.selectbox('**About last periods**',['Normal','Abnormal'])
 
 if st.button('Predict probability'):
     Length_of_Luteal_Phase = target - Estimated_Day_of_Ovulation
-    if(Length_of_Luteal_Phase>=14 | Length_of_Luteal_Phase<=21):
+    if(Length_of_Luteal_Phase>=14 and Length_of_Luteal_Phase<=21):
          Result = "Period is Normal"
     else:
          Result = "Period is Abnormal"
